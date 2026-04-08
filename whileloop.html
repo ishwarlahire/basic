@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whileloop</title>
+</head>
+
+<body>
+    <script>
+        let num = 0;
+        while (num <= 10) {
+            num++;
+            console.log("Q1", num);
+
+        }
+
+        let val = 10;
+        while (val >= 0) {
+            console.log("Q2", val);
+            val--;
+        }
+
+        let num2 = Math.floor(Math.random() * 10);
+
+        while (num2 !== 5) {
+            console.log("Q3", num2);
+            num2 = Math.floor(Math.random() * 10);
+        }
+
+        let om = 0;
+        while(om<=10){
+            om++;
+            let sham = 100;
+            while(sham<=105){
+                sham++;
+                console.log(sham);
+            }
+            console.log(`${om} loop complited by main while loop`);
+        }
+    </script>
+</body>
+
+</html>
