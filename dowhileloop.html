@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do while loop</title>
+</head>
+
+<body>
+    <script>
+        let num = 100;
+        do {
+            console.log(num);
+            num++;
+        } while (num <= 111);
+
+        let num2 = 100;
+        do {
+            console.log(num2);
+            num2--;
+        } while (num2 >= 80);
+
+        let num3 = 10;
+        do {
+            console.log(num3);
+            num3--;
+            let num4 = 100;
+            do {
+                console.log(`this is a internal loop ${num4}`);
+                num4++;
+            } while (num4 <= 111);
+
+        } while (num3 >= 0);
+
+    </script>
+</body>
+
+</html>
