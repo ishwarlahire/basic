@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of loop </title>
+</head>
+<body>
+    <script>
+        let name = "my name is ishwar";
+        for(let i of name){
+            console.log(i);
+        }
+
+        let students = ["suraj","sham","ram","ishwar"];
+        for(let j of students){
+            if(j=="ram"){
+            console.log(`jay shree ${j}`);
+            break;
+        }
+            console.log(j);
+        }
+
+        for(let k of students){
+            if(k=="suraj"){
+                continue;
+            }
+            console.log(k);
+        }
+    </script>
+</body>
+</html>
