@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and continue statement</title>
+</head>
+<body>
+    <script>
+        let i = 10;
+        for(i;i<=20;i++){
+            if(i==15){
+                continue;
+            }
+            console.log("Q1",i);
+        }
+
+    let j = 0;
+    let k = Math.floor(Math.random()*12);
+    for(j;j<=20;j++){
+        if(j===k){
+            break;
+        }
+        console.log("Q2",j);
+    }
+
+    let l = 0;
+    while(l<=10){
+        
+        if(l===3){
+            l++;
+            continue;
+        }
+        console.log("Q3",l);
+        l++;
+    }
+
+    let m = 0;
+    while(m<=15){
+        if(m===13){
+            break;
+        }
+        console.log("Q4",m);
+        m++;
+    }
+    </script>
+</body>
+</html>
