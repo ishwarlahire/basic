@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input field manipulation </title>
+    <script>
+        function getnamevalue() {
+            let data = document.getElementById("name").value;
+            console.log(name);
+            document.getElementById("heading").innerText = data;
+        }
+
+        function setnamevalue() {
+            let dfname = "jay shree ram";
+            document.getElementById('name').value = dfname;
+        }
+
+        function copynamevalue() {
+            let data = document.getElementById('newname').value;
+            document.getElementById('name').value = data;
+        }
+
+        function clearnamevalue() {
+            document.getElementById('name').value = "";
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1 id="heading"></h1>
+    <input type="text" id="name" placeholder="Enter Your Name">
+    <input type="text" id="newname" placeholder="Enter other name">
+    <br><br>
+    <button onclick="getnamevalue()">Get Name</button>
+    <button onclick="setnamevalue()">Set Name</button>
+    <button onclick="copynamevalue()">Copy Name</button>
+    <button onclick="clearnamevalue()">Clear Field</button>
+</body>
+
+</html>
